@@ -1,6 +1,6 @@
 streamlit==1.6.1
 pandas==2.2.3 
 numpy==2.2.1 
-pickle-mixin==1.0.2
+Python==3.12.5
 sklearn==1.41.1
 

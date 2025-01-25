@@ -5,4 +5,4 @@ Flask==3.1.0
 numpy==2.1.1
 pickleshare==0.7.5
 gitpython==3.1.37 
-python==3.10
+python==3.11.11

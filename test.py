@@ -49,10 +49,12 @@ input_df = pd.DataFrame({
     'crr': [crr],
     'rrr': [rrr]
 })
-st.table(input_df)
-result=pipe.predict_proba(input_df)
-st.text(result)
-loss=result[0][0]
-win=result[0][1]
-st.text(batting_team+'-'+str(round(win*100))+"%")
-st.text(bowling_team+'-'+str(round(loss*100))+"%")
+if st.button('Predict Probability'):
+
+    st.table(input_df)
+    result=pipe.predict_proba(input_df)
+    st.text(result)
+    loss=result[0][0]
+    win=result[0][1]
+    st.text(batting_team+'-'+str(round(win*100))+"%")
+    st.text(bowling_team+'-'+str(round(loss*100))+"%")
